@@ -1,0 +1,3 @@
+AMQP_URI: amqp://${RABBIT_USER:guest}:${RABBIT_PASSWORD:guest}@${RABBIT_HOST:localhost}:${RABBIT_PORT:5672}/
+DB_URIS:
+  "match:Base": postgres://${DB_USER:postgres}:${DB_PASSWORD:password}@${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:match}

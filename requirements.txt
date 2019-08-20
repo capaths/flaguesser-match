@@ -1,0 +1,7 @@
+pyyaml==3.13
+nameko==2.11.0
+marshmallow==2.19.5
+nameko_sqlalchemy
+psycopg2-binary
+cryptography==2.7
+sqlalchemy-utils==0.34.1

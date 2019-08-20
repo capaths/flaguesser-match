@@ -1,0 +1,70 @@
+0;Q96;Mexico;https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg
+1;Q414;Argentina;https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg
+2;Q29;Espana;https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg
+3;Q739;Colombia;https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg
+4;Q30;Estados Unidos;https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg
+5;Q142;Francia;https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg
+6;Q38;Italia;https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg
+7;Q419;Peru;https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg
+8;Q17;Japon;https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg
+9;Q298;Chile;https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg
+10;Q183;Alemania;https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg
+11;Q21;Inglaterra;https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg
+12;Q16;Canada;https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg
+13;Q148;China;https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg
+14;Q159;Rusia;https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg
+15;Q736;Ecuador;https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg
+16;Q408;Australia;https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg
+17;Q884;Corea del Sur;https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg
+18;Q79;Egipto;https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg
+19;Q41;Grecia;https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg
+20;Q241;Cuba;https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg
+21;Q668;India;https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg
+22;Q801;Israel;https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg
+23;Q258;Sudafrica;https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg
+24;Q423;Corea del Norte;https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg
+25;Q252;Indonesia;https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg
+26;Q790;Haiti;https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg
+27;Q155;Brasil;https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg
+28;Q717;Venezuela;https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg
+29;Q804;Panama;https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg
+30;Q783;Honduras;https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg
+31;Q800;Costa Rica;https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg
+32;Q750;Bolivia;https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg
+33;Q733;Paraguay;https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Paraguay_%28reverse%29.svg
+34;Q25;Gales;https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Wales_%281959%E2%80%93present%29.svg
+35;Q865;Taiwan;https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg
+36;Q77;Uruguay;https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg
+37;Q1028;Marruecos;https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg
+38;Q31;Belgica;https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_%28civil%29.svg
+39;Q224;Croacia;https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg
+40;Q40;Austria;https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg
+41;Q189;Islandia;https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg
+42;Q55;Paises Bajos;https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg
+43;Q45;Portugal;https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg
+44;Q39;Suiza;https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg
+45;Q43;Turquia;https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg
+46;Q846;Catar;https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg
+47;Q881;Vietnam;https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg
+48;Q916;Angola;https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg
+49;Q262;Algeria;https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg
+50;Q1009;Camerun;https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg
+51;Q117;Ghana;https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg
+52;Q1014;Liberia;https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg
+53;Q1033;Nigeria;https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg
+54;Q1032;Niger;https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg
+55;Q792;El Salvador;https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg
+56;Q948;Tunez;https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg
+57;Q1045;Somalia;https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg
+58;Q912;Mali;https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg
+59;Q869;Tailandia;https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg
+60;Q334;Singapur;https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg
+61;Q796;Iraq;https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg
+62;Q794;Iran;https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg
+63;Q928;Filipinas;https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg
+64;Q902;Bangladesh;https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg
+65;Q212;Ucrania;https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg
+66;Q34;Suecia;https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg
+67;Q36;Polonia;https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg
+68;Q20;Noruega;https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg
+69;Q222;Albania;https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg
