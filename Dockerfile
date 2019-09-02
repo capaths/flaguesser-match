@@ -11,5 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY config.yaml ./
 
 COPY match/ match/
+COPY images.txt ./
 
 CMD ["nameko", "run", "--config", "config.yaml", "match.service"]

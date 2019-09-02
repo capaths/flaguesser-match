@@ -1,18 +1,23 @@
 """Match Service"""
 
-import json, random
+import os
+import random
+
+from hashlib import sha256
+
 from nameko.web.handlers import http
 from nameko.rpc import rpc
-from match.models import Match, MatchDatabase
-from match.schemas import MatchSchema
+from nameko.dependency_providers import Config
 from nameko.exceptions import BadRequest
 
-import os
+from match.models import MatchDatabase
+from match.schemas import MatchSchema
 
 
 class MatchService:
     name = "match"
     rep = MatchDatabase()
+    config = Config()
 
     @rpc
     def create_match(self, username1, username2, score1, score2):
@@ -43,9 +48,11 @@ class MatchService:
         return 500, ""
 
     @rpc
-    def get_flags(self, n_flags=20):
+    def get_flags(self, n_flags=20, seed=None):
         path, _ = os.path.split(os.path.realpath(__file__))
         file1 = open(os.path.join(path, '../images.txt'), 'r')
+
+        random.seed(seed)
         sample_list = random.sample(range(0, 70), n_flags)
 
         name, url = [], []
@@ -77,3 +84,24 @@ class MatchService:
     def get_player_matches(self, username):
         matches = self.rep.get_player_matches(username)
         return matches
+
+    @rpc
+    def generate_match(self, username1: str, username2: str):
+        secret = self.config.get("SECRET", "secret")
+        salt = f"match;{username1};{username2};{secret}"
+        code = sha256(salt.encode()).hexdigest()
+        flags = self.get_flags(seed=code)
+        return {
+            'code': code,
+            'flags': flags
+        }
+
+    @rpc
+    def guess_flag(self, match_code: str, country: str):
+        flags = self.get_flags(seed=match_code)
+
+        clean_name = lambda name: ' '.join(name.lower().split(' '))
+
+        country = clean_name(country)
+        return country in list(map(lambda flag: clean_name(flag["name"]), flags))
+
