@@ -5,3 +5,4 @@ nameko_sqlalchemy
 psycopg2-binary
 cryptography==2.7
 sqlalchemy-utils==0.34.1
+unidecode===1.1.1

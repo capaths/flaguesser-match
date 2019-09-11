@@ -1,37 +1,24 @@
 """Match Service"""
-
 import os
 import random
+import unidecode
 
 from hashlib import sha256
 
-from nameko.web.handlers import http
 from nameko.rpc import rpc
 from nameko.dependency_providers import Config
-from nameko.exceptions import BadRequest
 
 from match.models import MatchDatabase
-from match.schemas import MatchSchema
 
 
 def standardize_flag_name(name):
-    return ' '.join(name.lower().split(' '))
+    return unidecode.unidecode(' '.join(name.lower().split(' ')))
 
 
 class MatchService:
     name = "match"
     rep = MatchDatabase()
     config = Config()
-
-    @rpc
-    def end_match(self, username1, username2, score1, score2):
-        if score1 > score2:
-            result = 1
-        elif score2 > score1:
-            result = 2
-        else:
-            result = 0
-        return self.rep.create_match(username1, username2, score1, score2, result)
 
     @staticmethod
     def get_flags(match_code: str, n_flags=20):
@@ -60,7 +47,13 @@ class MatchService:
 
     @rpc
     def guess_flag(self, match_code: str, country: str, n_flags=20):
-        return country in self.get_flags_names(match_code, n_flags)
+        flag_names, flag_urls = self.get_flags(match_code, n_flags)
+        s_country = standardize_flag_name(country)
+        try:
+            idx = flag_names.index(s_country)
+            return flag_urls[idx]
+        except ValueError:
+            return None
 
     @rpc
     def get_all_matches(self):
@@ -88,3 +81,13 @@ class MatchService:
         salt = f"match;{username1};{username2};{secret};{start_time}"
         code = sha256(salt.encode()).hexdigest()
         return code
+
+    @rpc
+    def end_match(self, username1, username2, score1, score2):
+        if score1 > score2:
+            result = 1
+        elif score2 > score1:
+            result = 2
+        else:
+            result = 0
+        return self.rep.create_match(username1, username2, score1, score2, result)

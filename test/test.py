@@ -107,5 +107,8 @@ def test_match_progress(session):
 
     flags_names, flags_urls = service.get_flags(code)
 
-    assert not service.guess_flag(code, "Wrong Country")
-    assert service.guess_flag(code, flags_names[0])
+    assert service.guess_flag(code, "Wrong Country") is None
+
+    for i in range(20):
+        flag_url = service.guess_flag(code, flags_names[i])
+        assert flag_url == flags_urls[i]
