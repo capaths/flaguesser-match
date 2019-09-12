@@ -1,6 +1,7 @@
 """Match Service"""
 import os
 import random
+import json
 import unidecode
 
 from hashlib import sha256
@@ -55,25 +56,31 @@ class MatchService:
         except ValueError:
             return None
 
+    def match_to_dict(self, instance):
+        dicto = dict()
+        dicto['id'] = instance.id
+        dicto['username1'] = instance.username1
+        dicto['username2'] = instance.username2
+        dicto['score1'] = instance.scoreP1
+        dicto['score2'] = instance.scoreP2
+        dicto['result'] = instance.result
+        return dicto
+
     @rpc
     def get_all_matches(self):
         matches = self.rep.get_all_matches()
         array = []
         for instance in matches:
-            dicto = dict()
-            dicto['id'] = instance.id
-            dicto['username1'] = instance.username1
-            dicto['username2'] = instance.username2
-            dicto['score1'] = instance.scoreP1
-            dicto['score2'] = instance.scoreP2
-            dicto['result'] = instance.result
-            array.append(dicto)
+            array.append(self.match_to_dict(instance))
         return array
 
     @rpc
     def get_player_matches(self, username: str):
         matches = self.rep.get_player_matches(username)
-        return matches
+        array = []
+        for instance in matches:
+            array.append(self.match_to_dict(instance))
+        return array
 
     @rpc
     def generate_match_code(self, username1: str, username2: str, start_time: float):

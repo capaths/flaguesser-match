@@ -45,15 +45,15 @@ def test_match_storage(session):
 
     # check if 2 wins against 1, then result is 2
     assert service.end_match(USER("D"), USER("E"), SCORE_LOW, SCORE_HIGH)
-    assert service.get_player_matches(USER("D"))[0].result == 2
+    assert service.get_player_matches(USER("D"))[0]["result"] == 2
 
     # check if 1 wins against 2, then result is 1
     assert service.end_match(USER("F"), USER("G"), SCORE_HIGH, SCORE_LOW)
-    assert service.get_player_matches(USER("F"))[0].result == 1
+    assert service.get_player_matches(USER("F"))[0]["result"] == 1
 
     # check if draw, then result is 0
     assert service.end_match(USER("H"), USER("I"), SCORE_HIGH, SCORE_HIGH)
-    assert service.get_player_matches(USER("H"))[0].result == 0
+    assert service.get_player_matches(USER("H"))[0]["result"] == 0
 
     # check all matches have been added
     assert len(service.get_all_matches()) == 5
